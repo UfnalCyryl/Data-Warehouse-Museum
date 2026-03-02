@@ -1,0 +1,221 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="178a4495-cdd2-4649-8de7-af951269eefa" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Artwork_New</ID>
+  <Name>Artwork_New</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="32ad9a21-06f5-4654-8300-1bee46b60447">
+    <DataSourceViewID>Warehouse</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="0abbb384-e198-4f32-9dad-c9cbfed01dba">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="5e685d8a-611c-4002-a9a0-9c5b7afba04b">
+      <ID>ID Artwork</ID>
+      <Name>ID Artwork</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6f50a146-410c-473b-b7c6-80d7a57bb0b7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="899028e3-64c9-4465-8d6d-1afc0a6431fb">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>ID_Artwork</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="76f8fa23-8793-445e-a936-b4b56ce57378">
+          <AttributeID>ARTWORK AUTHENTICITY CERT NUM</AttributeID>
+          <Name>ARTWORK AUTHENTICITY CERT NUM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="804a3e00-d71f-45d9-9716-a35ad2c3cc14">
+          <AttributeID>Title</AttributeID>
+          <Name>Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="170a2643-64c8-4267-9f6e-c18ecfb5cde8">
+          <AttributeID>Year Created</AttributeID>
+          <Name>Year Created</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1f0ab3d3-0218-4bd1-984d-651b224a5fe8">
+          <AttributeID>Type</AttributeID>
+          <Name>Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7caff943-acb9-47ea-9dcc-129978f03aeb">
+          <AttributeID>Medium</AttributeID>
+          <Name>Medium</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="384193dc-479b-4126-ab00-eac1450a7be6">
+          <AttributeID>Category Of Size</AttributeID>
+          <Name>Category Of Size</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="edf34b42-7f05-4827-9ba9-aab78f03c4a0">
+          <AttributeID>Permanent</AttributeID>
+          <Name>Permanent</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="90fdd206-bd5b-44c8-8925-7896b7bf3f84">
+      <ID>ARTWORK AUTHENTICITY CERT NUM</ID>
+      <Name>ARTWORK AUTHENTICITY CERT NUM</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22a4b19e-f2c3-4f72-9f04-c86a38fbc7e2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b1da146-7eec-41fd-8aee-a15ca81d1457">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>ARTWORK_AUTHENTICITY_CERT_NUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a23da36a-ece7-40d6-b863-5cfd91ffa309">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba248179-53ec-4ede-bb42-516c1eeb8460">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ceabb82b-05f9-4578-a712-3b23d9a30a2a">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="62da9b4f-0db1-48bb-89c9-a0475e573c4f">
+      <ID>Year Created</ID>
+      <Name>Year Created</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55b8920f-a6e4-4f71-8b70-00cc889115ea">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa36278b-4e51-45f4-b8c3-e660f399716c">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>Year_created</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcca5bc7-7f98-4b1d-ab66-ecd74ea64c9d">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96e000da-7344-4370-b322-691721dfcc9f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af69bdf9-fd29-4235-ab63-e406dd34f8f1">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e11f7c97-c4af-41c1-a910-dd98491284fe">
+      <ID>Medium</ID>
+      <Name>Medium</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c0757435-5bcb-4401-8639-ca22a81aba7a">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eeda2432-0712-4e4d-9cff-b6715ebfe207">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>Medium</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b5e1697-2430-4762-9348-6de4b57a12ed">
+      <ID>Category Of Size</ID>
+      <Name>Category Of Size</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f760c376-2d55-4540-a564-1c54870e75db">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c96aec5-324f-4808-8fef-5f45575686be">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>Category_of_size</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d4494b27-b8b2-4fd4-9d81-d0e4ca2fac2b">
+      <ID>Permanent</ID>
+      <Name>Permanent</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6fe87dff-8ed1-4bbd-b652-7831feb88f22">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8d11c85-0203-4511-b9fe-bf0576c7cef0">
+            <TableID>dbo_Artwork</TableID>
+            <ColumnID>Permanent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

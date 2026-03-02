@@ -1,0 +1,13 @@
+USE Museum_DW;
+SELECT TOP 10 * FROM [dbo].[A_B_L];
+SELECT TOP 10 * FROM [dbo].[A_D];
+SELECT TOP 10 * FROM [dbo].[Artist];
+SELECT TOP 10 * FROM [dbo].[Artwork];
+SELECT TOP 10 * FROM [dbo].[Borrowed_or_lent];
+SELECT TOP 10 * FROM [dbo].[Date];
+SELECT TOP 10 * FROM [dbo].[Donation];
+SELECT TOP 10 * FROM [dbo].[Institution];
+SELECT TOP 10 * FROM [dbo].[Junk_Borrowing];
+SELECT TOP 10 * FROM [dbo].[Junk_Donation];
+SELECT TOP 10 * FROM [dbo].[Patron];
+SELECT TOP 10 * FROM [dbo].[Patron_date_joined];

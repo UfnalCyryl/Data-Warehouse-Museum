@@ -40,5 +40,6 @@ The project follows a standard BI architectural pattern:
 ## Authors
 
 * **Cyryl Ufnal**
-* **Jakub Paprocki** 
+* **Jakub Paprocki**
+  
 *Developed during Datawarehouse classes 
